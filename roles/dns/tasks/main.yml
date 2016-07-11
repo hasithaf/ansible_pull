@@ -1,0 +1,8 @@
+---
+- name: Set DNS variables
+  include_vars: "{{item}}"
+  with_first_found:
+      - "{{first_three_octets}}.yml"
+      - "default.yml.j2"
+- name: Set resolv.conf
+  template: src=resolv.conf.j2 dest=/etc/resolv.conf owner=root group=root mode=0644
