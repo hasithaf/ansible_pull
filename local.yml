@@ -1,7 +1,9 @@
 ---
 - hosts: localhost
-
-  roles: 
-    - { role: time }
-
-
+  connection: local
+#
+#  roles: 
+#    - { role: time }
+  tasks:
+    - name: check date
+      shell: date > /var/tmp/file
