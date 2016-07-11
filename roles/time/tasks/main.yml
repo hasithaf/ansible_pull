@@ -2,5 +2,3 @@
 - name: check date and time
   shell: date > /var/tmp/file
 
-- name: check date and time
-  shell: date > /var/tmp/file
