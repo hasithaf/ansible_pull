@@ -4,7 +4,4 @@
 #
   roles: 
     - { role: time }
-#
-#  tasks:
-#    - name: check date
-#      shell: date > /var/tmp/file
+
