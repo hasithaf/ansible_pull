@@ -3,6 +3,6 @@
   connection: local
 #
   roles: 
-    - { role: time } 
-    - { role: date } 
+    - { role: time, when: "ansible_default_ipv4 in group[potomac]" }
+    - { role: date, when: "ansible_default_ipv4 in group[potomac]" }
 #    - { role: dns }
