@@ -3,5 +3,6 @@
   connection: local
 #
   roles: 
-    - { role: yum, when: "ansible_default_ipv4 in group[potomac]" }
+    - { role: yum }
+#    - { role: yum, when: "ansible_default_ipv4 in group[potomac]" }
 #    - { role: dns }
