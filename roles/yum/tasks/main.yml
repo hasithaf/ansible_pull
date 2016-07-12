@@ -1,5 +1,5 @@
 ---
-- name: install kernel packages
+- name: test yum
   yum: name={{item}} state=present
   with_items:
       - htop
