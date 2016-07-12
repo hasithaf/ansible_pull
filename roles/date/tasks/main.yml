@@ -1,5 +1,0 @@
----
-- name: check date and time
-  shell: date > /var/tmp/file-date
-
- 

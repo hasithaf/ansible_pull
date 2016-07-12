@@ -1,2 +1,0 @@
----
-first_three_octets: "{{'.'.join(ansible_default_ipv4.network.split('.')[0:3])}}"
