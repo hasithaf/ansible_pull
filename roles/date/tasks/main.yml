@@ -1,4 +1,4 @@
 ---
 - name: check date and time
-  shell: date > /var/tmp/file
+  shell: date > /var/tmp/file-date
 
