@@ -3,6 +3,5 @@
   connection: local
 #
   roles: 
-    - yum
-    - { role: yum, tags: main  when: "ansible_default_ipv4.address in groups['potomac']" }
+    - { role: yum, when: "ansible_default_ipv4.address in groups['potomac']" }
 #    - { role: dns }
