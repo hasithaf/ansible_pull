@@ -1,5 +1,5 @@
 ---
-- debug: msg="ansible_default_ipv4"
+- debug: msg="ansible_default_ipv4.address"
 #- name: test yum
 #  yum: name={{item}} state=present
 #  with_items:
