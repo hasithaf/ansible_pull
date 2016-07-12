@@ -4,6 +4,6 @@
   gather_facts: yes
 #
   roles: 
-    - { role: yum }
-#    - { role: yum, when: "ansible_default_ipv4 in groups['potomac']" }
+#    - { role: yum }
+    - { role: yum, when: "ansible_default_ipv4.address in groups['potomac']" }
 #    - { role: dns }
