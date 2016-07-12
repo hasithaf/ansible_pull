@@ -1,9 +1,8 @@
 ---
 - hosts: localhost
   connection: local
-  gather_facts: yes
 #
   roles: 
-#    - { role: yum }
-    - { role: yum, when: "ansible_default_ipv4.address in groups['potomac']" }
+    - yum
+    - { role: yum, tags: main  when: "ansible_default_ipv4.address in groups['potomac']" }
 #    - { role: dns }
