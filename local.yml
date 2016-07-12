@@ -4,5 +4,5 @@
 #
   roles: 
 #    - { role: yum }
-    - { role: yum, when: "ansible_default_ipv4 in group[potomac]" }
+    - { role: yum, when: "ansible_default_ipv4 in groups[potomac]" }
 #    - { role: dns }
