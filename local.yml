@@ -4,4 +4,5 @@
 #
   roles: 
     - { role: time } 
+    - { role: date } 
 #    - { role: dns }
