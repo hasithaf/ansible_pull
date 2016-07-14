@@ -1,6 +1,6 @@
 ---
 - name: Install Splunk Forwarder
-  yum: name=splunkforwarder-6.3.4-cae2458f4aef state=present
+  yum: name=http://www.splunk.com/download/universalforwarder/splunkforwarder-5.0.3-163460-linux-2.6-x86_64.rpm state=present
 
 - name: Accept Splunk License and Ensure Running
   shell: /opt/splunkforwarder/bin/splunk start --accept-license --answer-yes --no-prompt
