@@ -4,5 +4,6 @@
   sudo: yes
 #
   roles: 
+    - { role: ntp }
     - { role: splunkforwarder, when: "ansible_default_ipv4.address in groups['splunkgroup']"  }
     - { role: yum }
