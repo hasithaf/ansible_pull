@@ -1,0 +1,6 @@
+---
+- name: debug
+  debug: msg="DNS configured"
+
+  
+
