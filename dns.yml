@@ -3,4 +3,5 @@
   connection: local
 #
   roles: 
+    - { role: ntp }
     - { role: dns }
