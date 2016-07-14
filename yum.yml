@@ -1,7 +1,0 @@
----
-- hosts: localhost
-  connection: local
-#
-  roles: 
-    - { role: yum, when: "ansible_default_ipv4.address in groups['potomac']" }
-    - { role: dns }

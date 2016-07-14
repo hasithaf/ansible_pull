@@ -1,0 +1,8 @@
+---
+- name: Install Splunk Forwarder
+  yum: name=splunkforwarder-6.3.4-cae2458f4aef state=present
+
+- name: Accept Splunk License and Ensure Running
+  shell: /opt/splunkforwarder/bin/splunk start --accept-license --answer-yes --no-prompt
+  register: sfinstallstatus
+  changed_when: "'Starting splunk server daemon' in sfinstallstatus.stdout"

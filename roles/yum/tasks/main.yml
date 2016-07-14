@@ -1,9 +1,5 @@
 ---
-- name: debug
-  debug: msg="{{ansible_default_ipv4.address}}"
-
-  
-#- name: test yum
-#  yum: name={{item}} state=present
-#  with_items:
-#      - htop
+- name: yum install
+  yum: name={{item}} state=present
+  with_items:
+      - htop
