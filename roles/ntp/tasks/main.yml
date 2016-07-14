@@ -1,6 +1,6 @@
 ---
 - name: debug
-  debug: msg="DNS configured"
+  debug: msg="NTP configured"
 
   
 
